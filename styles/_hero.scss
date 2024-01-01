@@ -1,0 +1,41 @@
+@use '../styles/global' as *;
+.hero {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .textbox {
+        width: 60%;
+        z-index: 10;
+        .heading {
+            h1 {
+                line-height: 1.5;
+                font-size: 2.9rem;
+                font-weight: 400;
+            }
+            p {
+                letter-spacing: 1px;
+                margin-top: 10px;
+                color: $neutral;
+            }
+            .social {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .media {
+                    padding: 15px 20px;
+                    border: 2px solid $primary;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    .banner {
+        img {
+            z-index: -10;
+            width: 100%;
+        }
+    }
+}

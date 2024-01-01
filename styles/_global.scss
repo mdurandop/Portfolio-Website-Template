@@ -1,0 +1,60 @@
+// Boilerplate 
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+// Colors
+
+$primary : black;
+$secondary : white;
+$neutral : rgb(64, 64, 64);
+$error : rgb(239, 68, 68);
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+    font-family: 'Sora', sans-serif;
+    color: $primary;
+}
+
+// Buttons
+
+%btn {
+    display: flex;
+    width: fit-content;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: $primary;
+    color: $secondary;
+    &:hover {
+        background-color: $neutral;
+    }
+}
+
+
+// links
+
+a {
+    text-decoration: none;
+    color: $primary;
+    font-weight: bold;
+    &:hover {
+        color: $neutral;
+    }
+}

@@ -1,0 +1,24 @@
+@use '../styles/global' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        justify-content: flex-start;
+        display: flex;
+        gap: 20px;
+    }
+    .nav-links {
+        justify-content: flex-end;
+        display: flex;
+        gap: 20px;
+    }
+    .resume-btn {
+        @extend %btn;
+        gap: 10px;
+        p {
+            color: $secondary;
+        }
+    }
+}

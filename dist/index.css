@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+*, *::before, *::after {
+  font-family: "Sora", sans-serif;
+  color: black;
+}
+
+.header .resume-btn {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+.header .resume-btn:hover {
+  background-color: rgb(64, 64, 64);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+a:hover {
+  color: rgb(64, 64, 64);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  justify-content: flex-start;
+  display: flex;
+  gap: 20px;
+}
+.header .nav-links {
+  justify-content: flex-end;
+  display: flex;
+  gap: 20px;
+}
+.header .resume-btn {
+  gap: 10px;
+}
+.header .resume-btn p {
+  color: white;
+}
+
+.hero {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .textbox {
+  width: 60%;
+  z-index: 10;
+}
+.hero .textbox .heading h1 {
+  line-height: 1.5;
+  font-size: 2.9rem;
+  font-weight: 400;
+}
+.hero .textbox .heading p {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: rgb(64, 64, 64);
+}
+.hero .textbox .heading .social {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hero .textbox .heading .social .media {
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.hero .banner img {
+  z-index: -10;
+  width: 100%;
+}
