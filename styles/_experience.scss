@@ -1,0 +1,63 @@
+@use '../styles/global' as *;
+
+#experience {
+    margin-top: 60px;
+    width: 100%;
+    background-color: $primary;
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            margin-top: 40px;
+            color: $secondary;
+            font-weight: 400;
+            font-size: 2.5rem;
+        }
+        strong {
+            color: $secondary;
+        }
+    }
+    .experience-box {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .select {
+            background-color: #27272A;
+        }
+        .experience {
+            width: 80%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 2px solid $neutral;
+            margin-bottom: 20px;
+            .position-date {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                .position {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+                }
+                h3, p {
+                    color: $secondary;
+                    strong {
+                        color: $secondary;
+                        font-weight: 400;
+                    }
+                }
+            }
+            p {
+                color: $secondary;
+                font-weight: 100;
+            }
+        }
+    }
+}
