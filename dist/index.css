@@ -6,6 +6,7 @@
 }
 
 html, body {
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
@@ -94,10 +95,46 @@ a:hover {
 }
 .hero .textbox .heading .social .media {
   padding: 15px 20px;
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 4px;
 }
 .hero .banner img {
   z-index: -10;
   width: 100%;
+}
+
+.my-skills {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.my-skills .heading h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.my-skills .skills-box {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5%;
+  width: 100%;
+}
+.my-skills .skills-box .skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 160px;
+  border: 1.6px solid black;
+  margin-bottom: 40px;
+}
+.my-skills .skills-box .skill p {
+  margin-top: 25px;
+  font-weight: 700;
 }

@@ -1,0 +1,39 @@
+@use '../styles/global' as *;
+
+.my-skills {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .heading {
+        h1 {
+            font-weight: 400;
+            font-size: 2.5rem;
+        }
+    }
+    .skills-box {
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5%;
+        width: 100%;
+        .skill {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 160px;
+            border: 1.6px solid $primary;
+            margin-bottom: 40px;
+            p {
+                margin-top: 25px;
+                font-weight: 700;
+            }
+        }
+    }
+}
