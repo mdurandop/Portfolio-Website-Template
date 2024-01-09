@@ -1,0 +1,19 @@
+@use '../styles/global' as *;
+
+.about-me {
+    .container {
+        display: flex;
+        gap: 5rem;
+        .text-container {
+            color: $neutral;
+            .text-2 {
+                margin-top: 20px;
+                p {
+                    margin-top: 20px;
+                    line-height: 1.5rem;
+                    letter-spacing: 0.02rem;
+                }
+            }
+        }
+    }
+}
